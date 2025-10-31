@@ -11,5 +11,14 @@ class Program
         {
             Console.WriteLine(parts[i]);
         }
+        string whole = "";
+        for (int i = parts.Length - 1; i >= 0; i--)
+        {
+            whole += parts[i];
+            if (i > 0) whole += " | ";
+        }
+
+        Console.WriteLine("Результат сборки в обратном порядке: ");
+        Console.WriteLine(whole);
     }
 }
